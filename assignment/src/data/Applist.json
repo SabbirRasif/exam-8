@@ -1,11 +1,10 @@
-
 [
   {
     "image": "/src/assets/forest-icon.png",
-    "title": "Forest: Focus For Productivity",
-    "companyName": "seekrtech",
+    "title": "Forest: Focus Timer & Plant",
+    "companyName": "SeekrTech",
     "id": 101,
-    "description": "Forest is an app that helps you stay focused on your work. When you want to focus, you plant a seed. Over time, while you focus, this seed will gradually grow into a tree. If you leave the app, your tree will die. This gamified approach leverages the Pomodoro Technique to make deep work more engaging. Users can collectively grow a virtual forest, reinforcing the community aspect of productivity.",
+    "description": "Forest uses a gamified Pomodoro timer to help users stay focused. Plant a tree when you start work; if you leave the app, the tree dies. This ingenious system helps millions conquer phone addiction.",
     "size": 258,
     "reviews": 54000,
     "ratingAvg": 4.9,
@@ -19,11 +18,11 @@
     ]
   },
   {
-    "image": "/src/assets/smplan-icon.png",
-    "title": "SmPlan: ToDo List with Reminder",
-    "companyName": "productive.io",
+    "image": "/src/assets/todoist-icon.png",
+    "title": "Todoist: To Do List & Planner",
+    "companyName": "Doist Inc.",
     "id": 102,
-    "description": "SmPlan is a minimal yet powerful task manager. It allows for quick task entry, intelligent reminder scheduling, and project grouping. The clean interface eliminates distractions, focusing solely on getting things done. The app syncs across all devices, ensuring your to-do list is always up-to-date, whether you are on desktop or mobile. It also includes location-based reminders.",
+    "description": "Todoist is the ultimate task management tool, trusted by 30 million people. Quickly capture and organize tasks, set recurring due dates, and prioritize.",
     "size": 150,
     "reviews": 12000,
     "ratingAvg": 4.5,
@@ -34,6 +33,186 @@
       { "name": "3 star", "count": 500 },
       { "name": "4 star", "count": 2500 },
       { "name": "5 star", "count": 8800 }
+    ]
+  },
+  {
+    "image": "/src/assets/duolingo-icon.png",
+    "title": "Duolingo: Language Lessons",
+    "companyName": "Duolingo",
+    "id": 103,
+    "description": "Learn 40+ languages through quick, bite-sized lessons. Duolingo uses playful characters and interactive exercises to make learning addictive and effective.",
+    "size": 350,
+    "reviews": 90000,
+    "ratingAvg": 4.7,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 58000 }
+    ]
+  },
+  {
+    "image": "/src/assets/headspace-icon.png",
+    "title": "Headspace: Meditation & Sleep",
+    "companyName": "Headspace Inc.",
+    "id": 104,
+    "description": "Learn to meditate and live mindfully with hundreds of guided sessions covering stress, sleep, focus, and anxiety. Start with the free 'Basics' course.",
+    "size": 400,
+    "reviews": 32000,
+    "ratingAvg": 4.8,
+    "downloads": 6100000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 21700 }
+    ]
+  },
+  {
+    "image": "/src/assets/mint-icon.png",
+    "title": "Mint: Budget & Expense Tracker",
+    "companyName": "Intuit",
+    "id": 105,
+    "description": "Mint is a free personal finance tracker that helps you manage your money, pay bills, and track investments. Easily link all your accounts.",
+    "size": 180,
+    "reviews": 25000,
+    "ratingAvg": 4.6,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 15500 }
+    ]
+  },
+  {
+    "image": "/src/assets/notion-icon.png",
+    "title": "Notion: Notes, Docs, Tasks",
+    "companyName": "Notion Labs, Inc.",
+    "id": 106,
+    "description": "Notion is the all-in-one workspace for your notes, tasks, wikis, and databases. Build powerful dashboards tailored to your exact needs.",
+    "size": 220,
+    "reviews": 18000,
+    "ratingAvg": 4.7,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 12800 }
+    ]
+  },
+  {
+    "image": "/src/assets/strava-icon.png",
+    "title": "Strava: Run, Ride, Swim GPS",
+    "companyName": "Strava, Inc.",
+    "id": 107,
+    "description": "Track your fitness activity with GPS. Join millions of runners and cyclists, compare performance, and compete on segments.",
+    "size": 190,
+    "reviews": 40000,
+    "ratingAvg": 4.5,
+    "downloads": 10500000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 25500 }
+    ]
+  },
+  {
+    "image": "/src/assets/clashofclans-icon.png",
+    "title": "Clash of Clans",
+    "companyName": "Supercell",
+    "id": 108,
+    "description": "Build your village, raise a clan, and compete in epic Clan Wars! Clash of Clans is a long-running strategy game.",
+    "size": 380,
+    "reviews": 150000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 77000 }
+    ]
+  },
+  {
+    "image": "/src/assets/pinterest-icon.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 109,
+    "description": "Pinterest is a visual discovery engine for finding ideas like recipes, home and style inspiration, and more. Browse billions of Pins.",
+    "size": 165,
+    "reviews": 30000,
+    "ratingAvg": 4.4,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 17000 }
+    ]
+  },
+  {
+    "image": "/src/assets/elevate-icon.png",
+    "title": "Elevate: Brain Training Games",
+    "companyName": "Elevate Labs",
+    "id": 110,
+    "description": "Elevate is a brain training program designed to improve focus, speaking skills, processing speed, and memory.",
+    "size": 210,
+    "reviews": 15000,
+    "ratingAvg": 4.7,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "/src/assets/pocket-icon.png",
+    "title": "Pocket: Save, Read, Grow",
+    "companyName": "Mozilla",
+    "id": 111,
+    "description": "Pocket allows you to save articles, videos, and stories from any publication or webpage to view later, even offline.",
+    "size": 95,
+    "reviews": 9000,
+    "ratingAvg": 4.3,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "/src/assets/slack-icon.png",
+    "title": "Slack: Workplace Communication",
+    "companyName": "Slack Technologies",
+    "id": 112,
+    "description": "Slack is the industry-standard messaging app for business. Organize conversations by channels and collaborate in real-time.",
+    "size": 175,
+    "reviews": 14000,
+    "ratingAvg": 4.4,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 7500 }
     ]
   }
 ]
