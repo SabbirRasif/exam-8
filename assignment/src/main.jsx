@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import './index.css'; 
-import RootLayout from './components/RootLayout.jsx';
+import RootLayout from './components/Rootlayout.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AppsPage from './pages/AppsPage.jsx';
 import InstallationPage from './pages/InstallationPage.jsx';

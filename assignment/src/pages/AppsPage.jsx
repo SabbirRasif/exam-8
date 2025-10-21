@@ -1,12 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import AppCard from '../components/AppCard';
-import AppList from '../data/AppList.json'; // Ensure this path is correct!
+import AppList from '../data/AppList.json'; 
 import { FaSearch } from 'react-icons/fa';
 
 const AppsPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
-    // Filter the app list based on the search term
     const filteredApps = useMemo(() => {
         if (!searchTerm) {
             return AppList;
@@ -24,7 +23,7 @@ const AppsPage = () => {
             <h1 className="text-4xl font-extrabold text-gray-900 mb-2">App Store</h1>
             <p className="text-gray-500 mb-8">Discover and download the latest and greatest applications.</p>
             
-            {/* Search Bar */}
+        
             <div className="mb-10 relative max-w-2xl mx-auto">
                 <input
                     type="text"
@@ -35,8 +34,6 @@ const AppsPage = () => {
                 />
                 <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             </div>
-
-            {/* App Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {filteredApps.length > 0 ? (
                     filteredApps.map(app => (

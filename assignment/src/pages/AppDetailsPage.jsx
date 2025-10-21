@@ -2,25 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaStar, FaDownload, FaTags, FaRocket, FaGlobe } from 'react-icons/fa';
 import { toast } from 'react-toastify';
-import AppListData from '../data/AppList.json'; // Ensure this path is correct!
+import AppListData from '../data/AppList.json';
 
-// Safely assign AppList, defaulting to an empty array if import fails
 const AppList = Array.isArray(AppListData) ? AppListData : []; 
-
-// Utility function to format numbers (e.g., 8000000 -> 8M)
 const formatNumber = (num) => {
     if (num >= 1000000) return `${(num / 1000000).toFixed(1)}M`;
     if (num >= 1000) return `${(num / 1000).toFixed(0)}K`;
     return num;
 };
 
-// Utility function to get the current list of installed app IDs from localStorage
 const getInstalledApps = () => {
     const installed = localStorage.getItem('installedApps');
     return installed ? JSON.parse(installed) : [];
 };
 
-// Utility function to save the list of installed app IDs to localStorage
 const saveInstalledApps = (appIds) => {
     localStorage.setItem('installedApps', JSON.stringify(appIds));
 };
@@ -30,11 +25,8 @@ const AppDetailsPage = () => {
     const navigate = useNavigate();
 
     const [installedApps, setInstalledApps] = useState(getInstalledApps);
-
-    // CRITICAL: Find the app using the ID from the URL params
     const app = AppList.find(a => a.id === parseInt(appId));
 
-    // Check if the app was found. If not, redirect to the error page.
     useEffect(() => {
         if (!app) {
             navigate('/error/app-not-found');
@@ -42,12 +34,12 @@ const AppDetailsPage = () => {
     }, [app, navigate]);
 
     if (!app) {
-        return null; // Don't render anything while redirecting
+        return null; 
     }
 
     const isInstalled = installedApps.includes(app.id);
 
-    // Installation handler
+
     const handleInstall = () => {
         if (!isInstalled) {
             const newInstalledApps = [...installedApps, app.id];
@@ -61,30 +53,23 @@ const AppDetailsPage = () => {
         }
     };
 
-    // Rating Calculation Helper
     const totalReviews = app.reviews;
     const ratingBars = app.ratings.map(rating => ({
         ...rating,
         percentage: ((rating.count / totalReviews) * 100) || 0,
-    })).reverse(); // Reverse to display 5-star first
+    })).reverse();
 
     return (
         <div className="container mx-auto p-4 sm:p-6 lg:p-8">
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden p-6 sm:p-10">
-                
-                {/* Header Section (Icon, Title, Install Button) */}
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-6 mb-6">
                     <div className="flex items-center space-x-6">
-                        {/* App Icon (Placeholder for now) */}
                         <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gray-100 rounded-3xl flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden">
-                             {/* Using a placeholder SVG here, as image URLs are not provided */}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-gray-500">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
                             </svg>
                         </div>
-                        
-                        {/* Title and Company */}
                         <div className="mt-3 md:mt-0">
                             <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
                                 {app.title}
@@ -95,7 +80,7 @@ const AppDetailsPage = () => {
                         </div>
                     </div>
 
-                    {/* Install/Installed Button */}
+   
                     <div className="mt-6 md:mt-0">
                         <button 
                             className={`btn btn-lg w-full sm:w-80 rounded-full font-bold text-lg transition duration-300 transform shadow-xl 
@@ -110,11 +95,7 @@ const AppDetailsPage = () => {
                         </button>
                     </div>
                 </div>
-
-                {/* Main Content: Description and Ratings */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                    
-                    {/* Column 1: Description and App Stats */}
                     <div className="lg:col-span-2">
                         <h2 className="text-3xl font-bold text-gray-800 mb-4 flex items-center">
                             <FaTags className="mr-3 text-primary" /> Overview

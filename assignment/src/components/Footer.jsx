@@ -8,8 +8,15 @@ const Footer = () => {
             <div className="container mx-auto px-4 py-10">
                 <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6 mb-6">
                  
-                    <div className="text-3xl font-black mb-4 md:mb-0">
-                        <span className="text-primary">HERO.IO</span>
+                    <div className="text-3xl font-black mb-4 md:mb-0 flex">
+                         <img 
+                            src="/assets/logo.png" 
+                            alt="Hero IO Logo" 
+                            className="w-8 h-8 object-contain" 
+                        />
+                        <span className="text-2xl font-extrabold text-primary">
+                            Hero.io
+                        </span> 
                     </div>
                     
                     
@@ -29,7 +36,7 @@ const Footer = () => {
 
              
                 <div className="text-center text-sm text-gray-500 pt-4">
-                    Copyright © 2025 - All rights reserved by HERO.IO Dev Team
+                  The page you are looking for is not available.
                 </div>
             </div>
         </footer>

@@ -19,22 +19,22 @@ const HomePage = () => {
             <div className="pt-24 pb-16 bg-white text-center shadow-inner">
                 <div className="container mx-auto px-4">
                     <h1 className="text-6xl md:text-7xl font-extrabold text-gray-900 mb-4">
-                        We Build <span className="text-primary">Productive</span> Apps
+                        We Build <span className="text-primary"><br />Productive</span> Apps
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-                        At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.
+                       At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
                     </p>
                     <div className="flex justify-center space-x-6 mb-16">
                         <a href="https://www.apple.com/app-store/" target="_blank" className="btn btn-lg bg-primary hover:bg-violet-700 text-white shadow-xl px-8 py-3 rounded-xl border-none text-base">
                             <FaApple className="w-5 h-5 mr-2" /> App Store
                         </a>
                         <a href="https://play.google.com/" target="_blank" className="btn btn-lg bg-green-500 hover:bg-green-600 text-white shadow-xl px-8 py-3 rounded-xl border-none text-base">
-                            <FaGooglePlay className="w-5 h-5 mr-2" /> Play Store
+                            <FaGooglePlay className="w-5 h-5 mr-2" /> Google Play
                         </a>
                     </div>
                     <div className="relative max-w-5xl mx-auto">
                         <div className="bg-gray-200 h-96 lg:h-[500px] rounded-2xl flex items-center justify-center shadow-2xl shadow-gray-300">
-                            <p className="text-gray-500 text-xl">App Preview Screenshot</p>
+                            <p className="text-gray-500 text-xl"><img src="/assets/hero.png" alt="" srcset="" /></p>
                         </div>
                     </div>
                 </div>
